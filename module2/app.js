@@ -1,15 +1,11 @@
-var life = 100 ; // This is my life bar  NUMBER
 
-life= life - 10;
-//
-life = life / 10;
+let x, y, z;
+x = 10;
+y =2;
+z = x + y;
 
-var name = 'Aracely'//Name displayed in the game STRING
-
-var checkout = true; // BOOLEAN
-
-var box;
-
-var box = null;
-
+/* This is a comment box*/
+let _mod = "module";
+let _x = 2;
+let _y = 8;
 console.log(box);
