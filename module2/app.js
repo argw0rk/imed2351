@@ -7,7 +7,9 @@ let life = 100; // this is a player's life variable in a video game NUMBERS\
  life = life /20; //= 4.5
 
 let name = 'player one'; // this is a player's name variable in the game STRINGS VARIABLES
-
+{
+    let y = 50; //block scope variable cant be accessed outside this block
+}
 
 //CONSTANT OBJECT
 /*Create an object*/
