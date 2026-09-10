@@ -21,11 +21,17 @@ toUpper(youtuber);
   month: "September",
   day: 8,
   year: 2026,
+  paragraph: "Click this paragraph to see an alert message.",
   fullName: function () {
-    return this.firstname + " " + this.lastname;
+    return this.firstname + " " + this.lastname;    //method 
   }
 };
 
 console.log(person.fullName());
 
-document.getElementById("demo").innerHTML = " Todays date is " + person["month"] + " " + person["day"] + ", " + person["year"] + " and the person who worked on this script is " + person["firstname"] + " " + person["lastname"] + ".";
+document.getElementById("demo").innerHTML = " Todays date is " + person["month"] + " " + person["day"] + ", " + person["year"] + " and the person who worked on this script is " + person["firstname"] + " " + person["lastname"] + ". " + person["paragraph"];
+
+//Event listener for the paragraph
+document.getElementById("demo").addEventListener("click", function () {
+  alert("You clicked the paragraph! :D");
+});
