@@ -1,19 +1,25 @@
 const name = 'Module 3';
 const youtuber = 'Aracely';
 
-function adder(mod1, mod2 , mod3){
-console.log(mod1 + mod2 + mod3);
+const total = adder(5, 10, 15);
+console.log(total);
+
+
+function adder(mod1, mod2, mod3) {
+  return mod1 + mod2 + mod3;
 }
-adder(5,10,15);
+
 
 function toUpper(text) {
-const unpperCased = text.toUpperCase();
-console.log(unpperCased);
+  const unpperCased = text.toUpperCase();
+  console.log(unpperCased);
 }
 toUpper(name);
 toUpper(youtuber);
- //* Everything above is from the Youtube video*//
+ //* in and out parameters*//
 
+
+ 
  //Objects properties and methods
  const person = {
   firstname: "Aracely",
