@@ -20,6 +20,12 @@ toUpper(youtuber);
   lastname: "Garcia",
   month: "September",
   day: 8,
-  year: 2026
+  year: 2026,
+  fullName: function () {
+    return this.firstname + " " + this.lastname;
+  }
 };
+
+console.log(person.fullName());
+
 document.getElementById("demo").innerHTML = " Todays date is " + person["month"] + " " + person["day"] + ", " + person["year"] + " and the person who worked on this script is " + person["firstname"] + " " + person["lastname"] + ".";
