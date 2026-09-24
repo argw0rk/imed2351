@@ -10,17 +10,31 @@
 <h1>Module 5</h1>
 <p id="demo"></p>
 <div>
-    <h1 class="title">Hello </h1>
+    <h2 class="title">Hello click the button below</h2>
     <button class="changeColor">Click me!</button>
 </div>
 
 <ul class="name-list">
-    <li>Aracely</li>
-    <li>Cely</li>
-    <li>cel</li>
+    <p>Shopping List:click to change color</p>
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Bacon</li>
 </ul>
-<input class="list-input" type="text" placeholder="Enter a name...">
 
+<p id="p1">
+Now you see me!
+Now you dont!
+</p>
+<input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
+<input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+
+
+
+<p><button onclick="myMove()">Click Me to make the white box move </button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
 </body>
 
 <script src="./app.js"></script>
