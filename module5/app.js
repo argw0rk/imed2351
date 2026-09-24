@@ -1,44 +1,39 @@
-const age = 20;
+const names = ["Aracely", "Cely", "cel"];
 
-if(age > 18) {
-    console.log("You are an adult.");
-} else if (age <15){
-    console.log("You are a child.");
-}
-else {
-    console.log("You are not an adult.");
-}
-
-const MyAge = 25;
-
-const yourAge = 30;
-
-console.log(MyAge + yourAge);
-
-const isAgeInteger = Number.isInteger(age);
-console.log(isAgeInteger);
-
-if (yourAge > MyAge) {
-    console.log("Your older than me.");
+for (const name of names) { 
+     console.log(name);
+     if (name === "cel") {
+         console.log("Found cel!");
+         break;
+     }
 }
 
-const day = "Monday";
+let loading = 0;
 
-switch (day) {
-    case "Monday":
-        console.log("It is the start of the week.");
-        break;
-    case "Friday":
-        console.log("The weekend is almost here.");
-        break;
-    default:
-        console.log("It is another day of the week.");
+while (loading < 100) {
+    loading ++;
+    console.log('Website loading...');
 }
 
-//String Concatenation
-const name = "cely";
-const greeting = "Hello, my name is " + name + ".";
-console.log(greeting);
+    //2nd video 
 
-const uppercaseName = name.toUpperCase();
-console.log(uppercaseName);
+const text = document.querySelector(".title");
+const changecolor = document.querySelector(".changeColor");
+
+changecolor.addEventListener("click", function() {
+    text.classList.toggle('change');
+});
+
+
+//name list
+
+const userList = document.querySelectorAll(".name-list li");
+const listInput = document.querySelector(".list-input");
+
+for(user of userList){
+    user.addEventListener("click", function() {
+       this.style.color = "red";
+    });
+}
+
+console.log(listInput.value);
