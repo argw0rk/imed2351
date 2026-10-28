@@ -25,10 +25,10 @@ body {
     border-radius: 100px;
     font-size: 1.5rem;
     color: white;
-    cusror: pointer;
+    cursor: pointer;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
 }
 
 .hover {
-    transform: rotate(2);
+    transform: scale(2);
 }
