@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f5ef;
+  color: #303b32;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 35px 20px;
+  background-color: #dce8d8;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  color: #31583d;
+  font-size: 34px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  max-width: 800px;
+  margin: 35px auto;
+  gap: 20px;
+}
+
+.habit-box,
+.note-box {
+  padding: 22px;
+  border: 1px solid #d5dfd1;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.habit-box {
+  flex: 2;
+}
+
+.note-box {
+  flex: 1;
+  background-color: #fff8e9;
+}
+
+h2 {
+  margin-top: 0;
+  color: #42684b;
+  font-size: 21px;
+}
+
+#progress {
+  color: #627568;
+  font-weight: bold;
+}
+
+#habit-list {
+  min-height: 120px;
+  margin: 18px 0;
+  padding: 0;
+  list-style: none;
+}
+
+#habit-list li {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #f1f5ee;
+}
+
+#habit-list input {
+  accent-color: #4b7955;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #cbd6c7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #4b7955;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #365e40;
+}
+
+button:disabled {
+  background-color: #a7b3a5;
+  cursor: not-allowed;
+}
+
+.note-box p {
+  min-height: 75px;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 10px 20px 25px;
+  color: #637264;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+}

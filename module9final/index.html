@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Daily Habits</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>My Daily Habits</h1>
+    <p>A few small things to help make today a good day.</p>
+  </header>
+
+  <main>
+    <section class="habit-box">
+      <h2>Things I want to do today</h2>
+      <p id="progress">0 out of 0 habits done</p>
+
+      <ul id="habit-list"></ul>
+
+      <form id="habit-form">
+        <label for="habit-input">Add a habit:</label>
+        <div class="form-row">
+          <input id="habit-input" type="text" placeholder="Example: Go for a walk" maxlength="50" required>
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="note-box">
+      <h2>A little reminder</h2>
+      <p id="daily-note">Loading a note...</p>
+      <button id="new-note" type="button" disabled>Show another note</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>One step at a time!</p>
+  </footer>
+</body>
+</html>
